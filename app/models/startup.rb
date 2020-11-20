@@ -56,14 +56,7 @@ class Startup
             end
         end
         vc_name
-    end
-
-    
-    # def self.sign_contract(venture_capitalist)
-    #     FundingRound.all.select{|fr| fr.venture_capitalist == venture_capitalist}
-    # end 
-        
-        
+    end     
 
 end
 

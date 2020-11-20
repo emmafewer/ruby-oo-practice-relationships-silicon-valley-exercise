@@ -21,4 +21,20 @@ class VentureCapitalist
         end
     end
 
+    def offer_contract(startup, type, investment)
+        FundingRound.new(startup, self, type, investment)
+    end
+
+    def funding_rounds
+        FundingRound.all.select{|fr| fr.venture_capitalist == self}
+    end
+
+    def portfolio
+        self.funding_rounds.map{|fr| fr.startup.name}.uniq
+    end
+
+    def biggest_investment
+        #self.funding_rounds.investment.max
+    end
+
 end
