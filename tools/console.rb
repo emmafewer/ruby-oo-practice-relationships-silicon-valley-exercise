@@ -14,6 +14,7 @@ vc3 = VentureCapitalist.new("Sin 2", 999)
 fr1 = FundingRound.new(s1, vc1, "Angel", 1000.00)
 fr2 = FundingRound.new(s2, vc2, "Pre-Seed", 10330.00)
 fr3 = FundingRound.new(s3, vc3 , "Series A", 1000000000.00)
+fr4 = FundingRound.new(s1, vc1, "Series B", 250000.00)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
