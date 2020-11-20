@@ -28,5 +28,23 @@ class Startup
         @@all
     end
 
+    def sign_contract(venture_capitalist, type, investment)
+        FundingRound.new(self, venture_capitalist, type, investment)
+    end 
+
+    def num_funding_rounds
+        FundingRound.all.count{|fr| fr.startup == self}
+    end 
+ 
+        
+
+   
+    
+    # def self.sign_contract(venture_capitalist)
+    #     FundingRound.all.select{|fr| fr.venture_capitalist == venture_capitalist}
+    # end 
+        
+        
+
 end
 
