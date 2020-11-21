@@ -17,6 +17,7 @@ fr2 = FundingRound.new(s2, vc2, "Pre-Seed", 10330.00)
 fr3 = FundingRound.new(s3, vc3 , "Series A", 1000000000.00)
 fr4 = FundingRound.new(s1, vc1, "Series B", 250000.00)
 fr5 = FundingRound.new(s1, vc2, "Series B", 999999.00)
+fr6 = FundingRound.new(s1, vc2, "Series B", 11999999.00)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line

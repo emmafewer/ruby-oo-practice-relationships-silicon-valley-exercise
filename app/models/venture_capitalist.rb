@@ -1,7 +1,6 @@
 class VentureCapitalist
 
     attr_accessor :name, :total_worth
-    #attr_reader
 
     @@all = []
 
@@ -34,7 +33,11 @@ class VentureCapitalist
     end
 
     def biggest_investment
-        #self.funding_rounds.investment.max
+        self.funding_rounds.select.max{|fr|fr.investment}
     end
 
+    def invested(domain)
+        array = self.funding_rounds.select{|fr| fr.startup.domain == domain}
+        array.sum{|fr|fr.investment}
+    end
 end
